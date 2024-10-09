@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background:  #5c5e7b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #4e54c8;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #8f94fb;
+    outline: none;
+}
+
+button {
+    padding: 12px 15px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #8f94fb;
+    transform: translateY(-2px);
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: red;
+    transition: opacity 0.3s;
+}
+
+#message.success {
+    color: green;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    width: 300px;
+}
+
+.popup h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.popup p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.popup button {
+    padding: 10px 15px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: #8f94fb;
+}
+
+
